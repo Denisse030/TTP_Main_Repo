@@ -76,11 +76,11 @@ h2 {
 } */
 
 /* Box Model */
-* {
+/* * {
     /* margin */
-    margin: 0;
-    padding: 0;
-    /* This property changes the box model behavior to border-box, this means that the width & height of an element include the content, padding, & border, but excludes the margin */
+    /* margin: 0;
+    padding: 0; */
+    /* This property changes the box model behavior to border-box, this means that the width & height of an element include the content, padding, & border, but excludes the margin
     box-sizing: border-box; 
 }
 
@@ -93,4 +93,27 @@ h2 {
     font-size: 1.5rem;
     padding: 20px;
     margin: 5px;
+} */
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: 40px;
+    line-height: 1.5;
+    letter-spacing: .8em;
+    color: blueviolet;
+    font-weight: 600;
+    font-style: italic;
 }
