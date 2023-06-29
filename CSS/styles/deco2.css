@@ -1,0 +1,57 @@
+h1 {
+    text-transform: capitalize;
+    text-transform: uppercase;
+    color: rgb(77, 116, 243);
+    font-size: 75px;
+    font-family: cursive;
+    text-decoration:solid;
+}
+
+h2 {
+    text-transform: capitalize;
+    color: rgb(77, 116, 243);
+    font-size: 50px;
+    font-family: cursive;
+}
+
+h3 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    color:aliceblue;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    color: rgb(85, 107, 195);
+    font-size: 50px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+th {
+    text-align: center;
+    color: rgb(85, 107, 195);
+    font-size: 50px;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+li {
+    color:aliceblue;
+    font-size: 25px;
+    font-family:fantasy;
+}
+
+hr{
+    color:aliceblue;
+}
+
+body {
+    background-color:rgb(211, 170, 132);
+}
+
+img{
+    border: 10px solid rgb(83, 171, 225);
+}
