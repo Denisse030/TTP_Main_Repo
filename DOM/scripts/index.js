@@ -125,29 +125,96 @@
 
 
 
-let newElement = document.createElement("p");
-console.log(newElement);
-newElement.textContent = "I just created this";
+// let newElement = document.createElement("p");
+// console.log(newElement);
+// newElement.textContent = "I just created this";
 
-document.body.appendChild(newElement);
+// document.body.appendChild(newElement);
 
-//Ex 2
-const div = document.createElement("div");
-div.classList.add("box");
-console.log(div);
-document.getElementById
-("container").appendChild(div);
+// //Ex 2
+// const div = document.createElement("div");
+// div.classList.add("box");
+// console.log(div);
+// document.getElementById
+// ("container").appendChild(div);
 
 
 
 // Ex 5
-function removeMultipleChildElements() {
-    const container = document.getElementById("container4");
-    console.log(container);
-    const paragraphs = container.querySelectorAll("p");
-    paragraphs.forEach(function(paragraph) {
-        container.removeChild(paragraph);
-    })
-}
+// function removeMultipleChildElements() {
+//     const container = document.getElementById("container4");
+//     console.log(container);
+//     const paragraphs = container.querySelectorAll("p");
+//     paragraphs.forEach(function(paragraph) {
+//         container.removeChild(paragraph);
+//     })
+// }
 
-removeMultipleChildElements();
+// removeMultipleChildElements();
+
+
+
+//06/06
+
+// const button = document.getElementById('click-me')
+// button.addEventListener('click', () ==> {
+//     console.log('Button clicked');
+// });
+
+// const countButton = document.getElementById('count-me');
+// let clickCount = 0;
+
+// countButton.addEventListener('click', () ==> {
+//     clickCount++;
+//     console.log(`This button has been clicked ${clickcount} times`);
+// });
+
+// const hover = document.getElementById('hover me');
+// let hoverCounter = 0;
+
+// document.addEventListener('keydown', (event) ==> )
+
+//parent & child nodes
+// const container = document.getElementById('container');
+// let children = container.childNodes;
+// console.log(children);
+
+// let firstChild = container.firstChild;
+// console.log(firstChild);
+
+// let lastChild = container.lastChild;
+// console.log(lastChild);
+
+//accesssing siblings
+// let nextSibling = firstChild.nextSibling;
+// console.log(nextSibling);
+
+// let previousSibling = lastChild.previousSibling;
+// console.log(previousSibling);
+
+// //setTimeout & setInterval
+// function hello(){
+//     console.log('hello world');
+// }
+// setTimeout(hello, 1000);
+
+// setInterval(hello, 2000);
+
+const textElement = document.getElementById('myText');
+const textButton = document.getElementById('changeText');
+
+textButton.addEventListener('click', () ==> {
+    setTimeout(()==> {
+        textElement.textContent = 'Text Changed!';
+    }, 2000);
+});
+
+//set Interval
+const divElement = document.getElementById('myDiv');
+let colors = ['red', 'blue', 'purple'];
+let count = 0;
+
+setInterval(() ==> {
+    divElement.style.backgroundColor = colors[count % colors.length];
+    count++;
+});
